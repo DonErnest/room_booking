@@ -28,20 +28,14 @@ class Booking {
   }) {
     return Booking(
       id: id ?? this.id,
-      userName: userName ?? this.userName,
-      meetingName: meetingName ?? this.meetingName,
-      start: start ?? this.start,
-      end: end ?? this.end,
+      userName: userName?? this.userName,
+      meetingName: meetingName?? this.meetingName,
+      start: start?? this.start,
+      end: end?? this.end,
     );
   }
 }
 
 final sampleBookings = List<Booking>.from([
-  Booking(
-    id: uuid.v4(),
-    userName: "Belmek",
-    meetingName: "How to bit the shit",
-    start: DateTime(2025, 4, 30, 10, 0),
-    end: DateTime(2025, 4, 30, 11, 0),
-  ),
+  Booking(id: uuid.v4(), userName: "Belmek", meetingName: "How to bit the shit", start: DateTime(2025, 4, 30, 10, 0), end: DateTime(2025, 4, 30, 11, 0))
 ]);

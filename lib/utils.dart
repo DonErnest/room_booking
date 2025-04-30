@@ -12,7 +12,7 @@ String formatDate(DateTime dateTime) {
   final day = _zeroPad(dateTime.day);
   final month = _zeroPad(dateTime.month);
   final year = dateTime.year;
-  return '$day.$month.$year';
+  return '$year-$month-$day';
 }
 
 String formatTime(TimeOfDay dateTime) {

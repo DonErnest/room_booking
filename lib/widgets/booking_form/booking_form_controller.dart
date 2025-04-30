@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:room_booking/models/booking.dart';
 
 class BookingFormController {
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
   final bookingMeetingNameController = TextEditingController();
   final bookingUserNameController = TextEditingController();
 
